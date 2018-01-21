@@ -34,7 +34,7 @@ It's necessary to have previously a S3 bucket to save XMLTV file.
 
 ### Remove all resources create for the service in AWS
 
-```serverless remove````
+```serverless remove```
 
 ## Configure
 
