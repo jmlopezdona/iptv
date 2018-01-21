@@ -1,0 +1,21 @@
+{
+  "name": "tvhstar",
+  "version": "1.0.0",
+  "description": "Descarga periódica del EPG desde Movistar TV",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuisPalacios/tvhstar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.185.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "xml2js": "^0.4.17"
+  }
+}
