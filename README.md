@@ -40,6 +40,12 @@ It's necessary to have previously a S3 bucket to save XMLTV file.
 
 Main configuration values tion (timeout, memory, schedule, etc.) can be adjusted in ```serverless.yml``` in the root of the project.
 
+## Utils
+
+Example to create from AWS CLI a pre-sign url to access to the guide.xml uploaded to S3 bucket (for 5 years):
+
+```aws s3 presign s3://jmlopezdona/iptv/guia.xml --expires-in 157680000```
+
 # Known bugs
 
 It's necessary to add manually the policy to the function's created default role to access to S3 bucket.

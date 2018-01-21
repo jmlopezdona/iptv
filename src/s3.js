@@ -9,8 +9,7 @@ const uploadFile = function (data, resolve) {
     s3.putObject({
       Bucket: 'jmlopezdona',
       Key: 'iptv/guia.xml',
-      Body: base64data,
-      ACL: 'public-read'
+      Body: base64data
     },function (resp) {
       console.log(arguments);
       console.log('Successfully uploaded package.');
