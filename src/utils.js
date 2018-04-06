@@ -119,7 +119,7 @@ const utils = {
 
         // Calcular el Timezone Offset, necesito añadirlo a las fechas 
         // de start/stop para ser compatibles Tvheadend. 
-        let hrs = -(new Date().getTimezoneOffset() / 60)
+        let hrs = -(new Date().getTimezoneOffset() / 60) + 1;
         let sign = "";
         if (hrs < 0) { sign = '-'; }
         if (hrs > 0) { sign = '+'; }
